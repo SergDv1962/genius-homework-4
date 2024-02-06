@@ -1,0 +1,52 @@
+.mobile-menu {
+   position: fixed;
+   left: 0;
+   top: 0;
+   bottom: 0;
+   right: 0;
+   background-color: var(--color-primary-white);
+   padding: 16px 20px;
+   transition-duration: 0.5s;
+   &.is-hidden{
+      transform: translateX(-100%);
+   }
+   
+   &__btn-close {
+      position: absolute;
+      right: 20px;
+      top: 16px;
+      fill: transparent;
+      stroke: var(--color-primary-blue-dark);
+      cursor: pointer;
+      &:hover{
+         stroke: var(--color-primary-blue-light);
+      }
+   }
+   &__logo{
+      margin-bottom: 32px;
+      fill: var(--color-primary-blue-light);
+   }
+   &__list {
+      display: block;
+      line-height: 1;
+      font-size: 14px;
+   }
+   &__item{
+      color: var(--color-primary-blue-dark);
+      margin-bottom: 16px;
+      &:hover{
+         color: var(--color-primary-blue-light);
+      }
+   }
+   &__socials {
+      display: flex;
+      gap: 16px;
+   }
+   &__icon{
+      fill: var(--color-primary-blue-dark);
+      cursor: pointer;
+      &:hover{
+         fill: var(--color-primary-blue-light);
+      }
+   }
+}

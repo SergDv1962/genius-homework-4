@@ -1,0 +1,23 @@
+.brand-color {
+   color: var(--color-primary-blue-light);
+}
+.text-uppercase{
+   text-transform: capitalize;
+}
+.title {
+   font-family: Play, sans-serif;
+   font-size: 31px;
+   font-weight: 700;
+   line-height: 1;
+   margin-bottom: 24px;
+   @media (min-width: $bp-tablet) {
+      font-size: 44px;
+      margin-bottom: 48px;
+   }
+   @media (min-width: $bp-desktop) {
+      font-size: 64px;
+   }
+   &_central {
+      text-align: center;
+   }
+}

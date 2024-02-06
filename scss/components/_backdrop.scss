@@ -1,0 +1,17 @@
+.backdrop {
+   position: fixed;
+   left: 0;
+   top: 0;
+   right: 0;
+   height: 100%;
+   bottom: 0;
+   background-color: #747272;
+   z-index: 20;
+   overflow-y: auto;
+   transition: visibility 0.5s, opacity 0.5s;
+   &.is-open-window{
+      visibility: hidden;
+      opacity: 0;
+      pointer-events: none;
+   }
+}

@@ -1,0 +1,8 @@
+.procedures-section {
+   &__container {
+      padding-top: 40px;
+      @media (min-width: $bp-tablet) {
+         padding-top: 96px;
+      }
+   }
+}

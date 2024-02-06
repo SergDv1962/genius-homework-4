@@ -1,0 +1,70 @@
+.header {
+   position: fixed;
+   width: 100%;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.1);
+   z-index: 10;
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 12px 0 0;
+      @media (min-width: $bp-mobile) {
+         padding: 16px 0;
+      }
+      @media (min-width: $bp-desktop) {
+         padding: 32px 0;
+      }
+   }
+   &__nav {
+      flex-basis: 100%;
+      display: flex;
+      align-items: center;
+   }
+   &__logo {
+      fill: var(--color-primary-blue-light);
+   }
+   &__list {
+      display: none;
+      @media (min-width: $bp-desktop) {
+         flex-basis: 100%;
+         display: flex;
+         justify-content: center;
+         gap: 56px;
+      }
+   }
+   &__item {
+      color: var(--color-primary-blue-dark);
+      font-size: 18px;
+      line-height: 1;
+      &:hover{
+         color: var(--color-primary-blue-light);
+      }
+   }
+   &__socials {
+      display: none;
+      @media (min-width: $bp-desktop) {
+      display: flex;
+      gap: 32px;
+      }
+   }
+   &__icon {
+      fill: var(--color-primary-blue-dark);
+      cursor: pointer;
+      &:hover{
+         fill: var(--color-primary-blue-light);
+      }
+   }
+   &__burger {
+      fill: var(--color-primary-white);
+      cursor: pointer;
+      &:hover{
+         fill: var(--color-primary-blue-light);
+      }
+      @media (min-width: $bp-desktop) {
+        display: none; 
+      }
+   }
+}
+

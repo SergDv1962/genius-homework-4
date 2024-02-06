@@ -1,0 +1,20 @@
+.whyUs-section {
+   &__container {
+      padding-top: 120px;
+      @media (min-width: $bp-desktop) {
+         padding-top: 176px;
+      }
+   }
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      align-items: center;
+      @media (min-width: $bp-desktop) {
+         flex-direction: row;
+         gap: 42px;
+         justify-content: center;
+       }
+   }
+}
+

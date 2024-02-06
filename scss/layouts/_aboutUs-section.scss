@@ -1,0 +1,102 @@
+.aboutUs-section {
+   &__container {
+      @media (min-width: $bp-tablet) {
+         display: flex;
+         gap: 3%;
+         padding-top: 30px;
+      } 
+   }
+   &__content {
+      position: relative;
+      @media (min-width: $bp-tablet) {
+      flex-basis: 58%;
+      padding-top: 40px;
+      }
+   }
+   &__text {
+      font-size: 18px;
+      line-height: 1.73;
+      @media (min-width: $bp-mobile) {
+         font-size: 22px;
+      }
+      &:not(:last-child){
+         padding-bottom: 16px;
+         @media (min-width: $bp-mobile) {
+           padding-bottom: 40px; 
+         }
+      }
+   }
+   &__images {
+      display: none;
+      @media (min-width: $bp-tablet) {
+      flex-basis: 39%;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      position: relative;
+      }
+   }
+   &__img {
+      max-width: 335px;
+      border-radius: 50%;
+      &_last {
+      align-self: flex-end;
+      }
+   }
+   &__star-first {
+      display: none;
+      @media (min-width: $bp-desktop) {
+         display: block;
+         position: absolute;
+         top: 10%;
+         right: 0;
+         fill: var(--color-primary-blue-light);
+         animation: starMoveTwo 3s ease 0.2s infinite;
+      }
+   }
+   &__star-second {
+      display: none;
+      @media (min-width: $bp-desktop) {
+         display: block;
+         position: absolute;
+         top: 40%;
+         right: 10%;
+         fill: var(--color-secondary-blue);
+         animation: starMoveOne 2s ease 0.2s infinite;
+      }
+   }
+   &__star-third {
+      position: absolute;
+      bottom: 0%;
+      right: 20%;
+      fill: var(--color-primary-blue-light);
+      animation: starMoveOne 3s ease 0.2s infinite;
+   }
+}  
+
+@keyframes starMoveOne {
+   0% {
+     transform: rotate(0) scale(1);
+     
+   }
+   50%{
+      transform: rotate(180deg) scale(2);
+      fill: var(--color-secondary-yellow);
+   }
+   100%{
+      transform: rotate(0) scale(0.1);
+   }
+}
+@keyframes starMoveTwo {
+   0% {
+      transform: translate(0px, 0px);
+   }
+   20%{
+      transform: translate(-140px, -160px) rotate(360deg);
+      fill:var(--color-secondary-yellow)
+   }
+   100%{
+      transform: translate(-40px, 20px) scale(0.1);
+   }
+}
+

@@ -1,0 +1,114 @@
+.footer {
+   background-color: var(--color-primary-blue-dark);
+   &__container {
+      padding: 32px 0 66px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      @media (min-width: $bp-tablet) {
+         padding: 56px 0;
+         flex-direction: row;
+         justify-content: space-between;
+         align-items: start;
+         margin: 0;
+      }
+   }
+   &__logo {
+      fill: var(--color-primary-blue-light);
+      margin-bottom: 42px;
+      @media (min-width: $bp-tablet) {
+        margin-bottom: 0; 
+      }
+   }
+   &__nav {
+      flex-basis: 18%;
+      text-align: center;
+      @media (min-width: $bp-tablet) {
+         text-align: left;
+      }
+   }
+   &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+      line-height: 1;
+      @media (min-width: $bp-tablet) {
+         gap: 16px;
+      }
+   }
+   &__item {
+      color: var(--color-primary-white);
+      font-size: 16px;
+      padding-bottom: 16px;
+      &:hover{
+         color: var(--color-primary-blue-light);
+      }
+      @media (min-width: $bp-tablet) {
+            padding-bottom: 0;
+         }
+      &_hidden{
+         display: none;
+         @media (min-width: $bp-tablet) {
+            display: block;
+         }
+      }
+   }
+   &__address-block {
+      display: grid;
+      @media (min-width: $bp-tablet) {
+         grid-template-columns: 184px auto;
+         grid-template-rows: 16px auto; 
+         flex-basis: 58%;
+      }
+      @media (min-width: $bp-desktop) {
+         flex-basis: 50%;
+      }
+   }
+   &__address {
+      margin: 0 auto;
+      width: 136px;
+      @media (min-width: $bp-tablet) {
+         margin: 0;
+         width: auto;
+        grid-row: 1 / span 2; 
+      } 
+   }
+   &__socials {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+   &__icon {
+      fill: var(--color-primary-white);
+      cursor: pointer;
+      &:hover{
+         fill: var(--color-primary-blue-light);
+      }
+   }
+   &__politic-link {
+      color: var(--color-primary-white);
+      line-height: 1;
+      font-size: 16px;
+      text-align: right;
+      grid-row: 1;
+      padding-bottom: 16px;
+      &:hover{
+         color: var(--color-primary-blue-light);
+      }
+      @media (min-width: $bp-tablet) {
+         padding-bottom: 0;
+         grid-row: 1 /  2; 
+       }
+   }
+   &__politic-copyright {
+      font-size: 13px;
+      color: var(--color-secondary-grey-light);
+      text-align: center;
+      padding-top: 16px;
+      @media (min-width: $bp-tablet) {
+         text-align: right;
+         padding-right: 66px;
+      }
+   }
+}

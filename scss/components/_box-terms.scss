@@ -1,0 +1,11 @@
+.box-terms{
+   &__text {
+      color: var(--color-secondary-grey-light);
+      text-align: center;
+      font-size: 12px;
+   }
+   &__link {
+      color: var(--color-secondary-grey-light);
+      text-decoration-line: underline;
+   }
+}
